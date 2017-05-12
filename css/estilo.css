@@ -1,0 +1,411 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+/*ESTILO PADRÕES*/
+body{
+	margin: 0;
+	font-family: "Open Sans";
+	padding-top: 40px;
+}
+
+.container{
+	width: 1140px;
+	margin: 0 auto;
+
+}
+
+.linha{
+	display: flex;
+}
+
+	.linha.espacoEntre{
+		justify-content: space-between;
+	}
+	.linha.alinharVertical{
+		align-items: center;
+	}
+
+#cabecalho .fa{
+	color: white;
+}
+
+
+/*FIRST CHILD É O PRIMEIRO FILHO*/
+h1:first-child{
+	margin-top: 0;
+}
+
+a{
+	text-decoration: none;
+}
+
+ul{
+	list-style: none;
+}
+
+
+*{
+	color: #292929;
+	box-sizing: border-box;
+
+}
+.centralizador{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+body section,
+body main{
+	padding-top: 20px;
+}
+/*FIM PADRÕES*/
+
+
+/*CABEÇALHO*/
+#cabecalho{
+	width: 100%;
+	background-color: purple;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 11;
+}
+#cabecalho a{
+	color: white;
+}
+
+#cabecalho .container{
+	height: 40px;
+}
+
+.menuHorizontal ul{
+	margin: 0;
+	padding: 0;
+}
+
+.menuHorizontal a{
+	padding: 0 10px;
+}
+
+.botao.menuHamburguer{
+	background: none;
+	display: none;
+}
+
+
+
+/*FIM CABEÇALHO*/
+
+/*SLIDER*/
+#slider{
+	height: calc(100vh - 40px);
+	width: 100%;
+	padding-top: 0px;
+	position: relative;
+
+}
+
+#slider .seta{
+	font-size: 44px;
+	position: absolute; 
+	top: 50%;
+	background: none;
+	border: none;
+	transform: translateY(-50%);
+	z-index: 10;
+}
+
+#slider .seta i{
+	color: white;
+}
+
+#slider .seta.esquerda{
+	left: 0px;
+}
+
+
+#slider .seta.direita{
+	right: 0px;
+}
+
+#slider .bullets{
+	position: absolute;
+	bottom: 0px;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 10;
+
+}
+
+.bullet{
+	height: 15px;
+	width: 15px;
+	border-radius: 50%;
+	border: none;
+	margin: 0 10px;
+	background: #ccc;
+}
+
+
+.slideBox{
+	height: 100%;
+}
+
+.slide{
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	display: none;
+	transition: all 1s ease;
+	opacity: 0;
+
+}
+
+.slide.ativo{
+	display: flex;
+	opacity: 1;
+	z-index: 9;
+}
+
+.slide h3{
+	color: white;
+	font-size: 32px;
+}
+
+.slide img{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height:100%;
+	object-fit: cover;
+	z-index: -1;
+}
+
+#slogan *{ 
+	color: white;
+	font-size: 2em;
+}
+
+#slogan h1{
+	height: 81px;
+	width: 500px;
+	background: url(../images/logo.png) no-repeat;
+    overflow: hidden;
+    text-indent: 666px;
+}
+
+#slogan h2{
+	text-align: center;
+}
+
+/*FIM SLIDER*/
+
+/*VALORES*/
+
+.card{
+	padding:20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.card .textos{
+	text-align: center;
+}
+
+.card img{
+	height: 100px;
+}
+
+.botao{
+	font-size: 15px;
+	font-weight: bold;
+	padding: 7px 13px;
+	background: white;
+	border: solid 1px #ccc;
+	border-radius: 16px;
+	margin: 10px;
+}
+
+.botao .fa{
+	margin-left: 5px;
+}
+
+.botao .fa:only-child{
+	margin-left: 0px;
+}
+
+.botao.amei{
+	background: purple;
+}
+
+.botao.amei.vermelho{
+	background: red;
+}
+.botao.amei span{
+	color: white;
+}
+
+.botao.amei .fa{
+	color: red;
+}
+
+.botao.amei.vermelho .fa{
+	color: white;
+}
+
+#formSugestoes{
+	display: flex;
+}
+
+
+/*FIM VALORES*/
+
+/*FORMULARIO*/
+
+
+form{
+	background: #f5f5f5;
+	padding: 10px 0 20px 0;
+
+	
+}
+
+form h3{
+	text-align: center;
+	font-size: 2em;
+}
+
+.form-group{
+	margin-bottom: 0.5em;
+	margin-left: 50%;
+	transform: translateX(-25%);
+}
+
+.enviar{
+	border-radius: 50%;
+	padding: 10px;
+	background: #800080;
+    color: white;
+    font:  bold 12px/30px Georgia, serif;
+    display: block;
+	margin: 0 auto;
+}
+
+.form-group label{
+	display: inline-block;
+	min-width: 120px;
+	text-align: right;
+	
+}
+
+.form-group input::placeholder, 
+.form-group textarea::placeholder{
+	color: purple;
+}
+
+.form-group input:valid,
+.form-group textarea:valid {
+	border: 2px solid green;
+}
+
+.form-group input:invalid,
+.form-group textarea:invalid {
+	border: 2px solid red;
+}
+
+.balao{
+	margin: 10px 0;
+	background: #CCC;
+	padding: 10px;
+	border-radius: 10px;
+}
+.balao h3{
+	margin: 0;
+}
+
+/*FIM FORMULARIO*/
+
+
+/*TABLET*/
+@media (max-width: 1140px){
+	.container{
+		width: 700px;
+	}
+	#navegacaoPrimaria{
+		display: none;
+		position: absolute;
+		top: 40px;
+		width: 100%;
+		left: 0px;
+
+	}
+
+	.botao.menuHamburguer{
+		display: block;
+	}
+
+	.cardContainer{
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.card{
+		width: 50%;
+	}
+
+	#cabecalho .container{
+	position: relative;
+	}
+
+
+	#navegacaoPrimaria ul{
+		flex-direction: column;
+	}
+
+	#navegacaoPrimaria a{
+		display: block;
+		padding: 20px 0px;
+		padding-left: 20px;
+		color: #fafafa;
+		background: rgba(86, 53, 88, 0.51);
+	}
+
+	#navegacaoPrimaria.visivel{
+		display: block;
+	}
+
+	.form-group{
+	margin-bottom: 0.5em;
+	width: 100%;
+	margin-left: 50%;
+	transform: translateX(-50%);
+	}
+	
+	form textarea{
+		width: 48%;
+	}
+
+}	
+/*FIM TABLET*/
+
+/*SMARTPHONE*/
+
+@media (max-width: 700px){
+	.container{
+		width: 100%;
+	}
+
+	#slogan h1{
+		width: 300px;
+		background-size: contain;
+		margin: auto;
+	}
+	.card{
+		width: 100%;
+	}
+}
+
+/*FIM SMARTPHONE*/

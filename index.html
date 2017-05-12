@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<title>Reprograma - Reprogramando o mundo</title>
+</head>
+<body>
+	<!-- MENU HORIZONTAL -->
+	<header id="cabecalho">
+		<div class="container linha espacoEntre alinharVertical">
+			<button class="botao menuHamburguer"><i class="fa fa-bars"></i></button>
+
+			<nav class="menuHorizontal" id="navegacaoPrimaria">
+				<ul class="linha">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Contato</a></li>
+					<li><a href="#">Quem Somos</a></li>				
+				</ul>
+			</nav>
+			
+			<nav class="menuHorizontal" id="navegacaoMidiasSociais">
+				<ul class="linha">
+					<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></a></i></li>
+					<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></a></i></li>
+					<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<!-- FIM DO MENU HORIZONTAL -->
+
+	<!-- SLIDER -->
+	<div id="slider">
+		<div class="navegacoes">
+			<nav class="setas">
+				<button class="seta esquerda"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
+				<button class="seta direita"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+			</nav>
+			<nav class="menuHorizontal bullets">
+				<ul class="linha">
+					<!-- <li><button class="bullet ativo"></button></li>
+					<li><button class="bullet ativo"></button></li>
+					<li><button class="bullet ativo"></button></li>
+					<li><button class="bullet ativo"></button></li> -->
+					
+				</ul>
+			</nav>
+			<div class="slideBox">
+				<div class="slide centralizador ativo">
+					<img src="images/slide1.jpg">
+					<h3>Título maneiro</h3>
+					<a class= "botao" href="#">Ver Detalhe</a>
+				</div>
+				<div class="slide centralizador">
+					<img src="images/slide2.jpg">
+					<h3>Outro Título maneiro</h3>
+					<a class= "botao" href="#">Ver Detalhe</a>
+				</div>
+				<div class="slide centralizador">
+					<img src="images/slide3.jpg">
+					<h3>Outro outro Título maneiro</h3>
+					<a class= "botao" href="#">Ver Detalhe</a>
+				</div>
+				
+				<!--<div class="slide centralizador">
+					<img src="images/slide4.jpg">
+					<h3>Título maneiro</h3>
+					<a class= "botao" href="#">Ver Detalhe</a>
+				</div> -->
+			</div>	
+		</div>
+	</div>
+	<!-- FIM SLIDER -->
+
+
+	<!-- BANNER -->
+	<!-- <section id="banner">
+		
+		
+
+		<div class="container centralizador">
+			<div id="slogan">
+				<h1> {Reprograma} </h1>
+				<h2>Vamos Reprogramar o mundo</h2>
+			</div>
+		</div>
+
+	</section> -->
+	<!-- FIM BANNER -->
+
+	<!-- VALORES -->
+	<main id="valores">
+		<div class="container">
+			<!-- CARDS -->
+			<div class="cardContainer linha">
+				<div class="card">
+					<img src="images/foco.svg">
+					<div class="textos">
+						<h3>Foco!</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua.</p>
+					</div>
+					<div class="botoes linha">
+						<button class="botao detalhe">Detalhe</button>
+						<button class="botao amei"><span>Amei!</span>
+						<i class="fa fa-heart" aria-hidden="true"></i></button>
+					</div>
+				</div>
+
+				<div class="card">
+					<img src="images/forca.svg">
+					<div class="textos">
+						<h3>Força!</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua.</p>
+					</div>
+					<div class="botoes linha">
+						<button class="botao detalhe">Detalhe</button>
+						<button class="botao amei"><span>Amei!</span>
+						<i class="fa fa-heart" aria-hidden="true"></i></button>
+					</div>
+				</div>
+
+				<div class="card">
+					<img src="images/fe.svg">
+					<div class="textos">
+						<h3>Fé!</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua.</p>
+					</div>
+					<div class="botoes linha">
+						<button class="botao detalhe">Detalhe</button>
+						<button class="botao amei"><span>Amei!</span>
+						<i class="fa fa-heart" aria-hidden="true"></i></button>
+					</div>
+				</div>
+			</div>
+			<!-- FIM DE CARDS -->
+		</div>
+	</main>
+	<!-- FIM VALORES -->
+
+	<!-- FORMULARIO -->
+		<form id="formSugestoes" action="">
+				<h3>Comentário</h3>
+				<div>
+					<div class="form-group">
+						<label for="nome">Nome </label>
+						<input id="inputNome" type="text" name="nome" required placeholder="Nome, por favor" name="nome">	
+					</div>	
+
+					<div class="form-group">
+						<label id="conteudoSobrenome" for="nome">Sobrenome</label>
+						<input id="inputSobrenome" type="text" name="nome" required placeholder="Sobrenome, por favor" name="nome">	
+					</div>	
+
+					<div class="form-group">					
+						<label for="idade">Idade</label>
+						<input id="inputidade" type="number" required placeholder="Idade" name="number">	
+					</div>
+					
+					<div class="form-group">
+						<label for="sugestao">Sugestão</label>
+						<textarea id="inputSugestao" name="mensagem" 
+						cols="15" 
+						rows="4" 
+						maxlength="100" 
+						required
+						data-contador-fonte
+						placeholder="Uh lalaaa, insira sua mensagem em até 100 caracteres!"></textarea>	
+					<span data-contador-destino>100</span>
+					</div>	
+
+					<input id="botaoconteudo" class="enviar" type="submit" value="Enviar">
+				</div>
+
+				<div id="baloes">
+					
+				</div>
+		</form>
+			
+
+	<!-- FIM FORMULARIO -->
+
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
+
+<!-- Obs: data- é uma propriedade que existe e o restante significa o que é importante
+e só required é uma propriedade true -->
